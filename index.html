@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Laboratorio interactivo para aprender C++ y programación orientada a objetos.">
+  <title>C++ // POO LAB — Aprende construyendo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="topbar"><button class="icon-btn menu-toggle" id="menuToggle"
+        aria-label="Abrir navegación">☰</button><a class="brand" href="#home" aria-label="C++ Lab inicio"><span
+          class="brand-mark">C<span>++</span></span><span class="brand-name">// LAB</span></a><span
+        class="track-chip"><i></i> POO TRACK</span>
+      <div class="top-actions"><button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">☼</button><button
+          class="btn btn-primary" data-nav="playground">&lt;/&gt; <span>PLAYGROUND</span></button></div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-label">TU LABORATORIO <span>⌁</span></div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar tema..."
+            aria-label="Buscar temas"><kbd>⌘ K</kbd></div>
+        <nav id="sideNav" aria-label="Temas de aprendizaje"></nav>
+        <div class="sidebar-bottom">
+          <div class="level-card">
+            <div class="level-icon">✦</div>
+            <div><strong>LEVEL 01</strong><small>Rookie developer</small></div><span>↗</span>
+          </div>
+          <div class="tiny-status"><i></i> SISTEMA EN LÍNEA <span>v1.0</span></div>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+      <main id="mainContent" tabindex="-1"></main>
+    </div>
+    <footer class="footer"><span>C++ // POO LAB</span><span>BUILT TO THINK · POWERED BY C++</span><span>© 2025</span>
+    </footer>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
